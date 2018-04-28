@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="tabs" >
+    <ion-buttons left>
+      <button menuToggle icon-only ion-button >
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title class="titulo" text-center >
+      Rock App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+
+    <ion-card (click)="irMetal()" >
+        <img class="imgCategoria" src="assets/img/negro.png"/>
+        <div class="card-title">Metal</div>
+    </ion-card>
+    
+    <ion-card (click)="irRock()" >
+       <img class="imgCategoria" src="assets/img/negro.png"/>
+       <div class="card-title">Rock</div>
+    </ion-card>
+    
+    <ion-card (click)="irRock()" >
+       <img class="imgCategoria" src="assets/img/negro.png"/>
+       <div class="card-title">Rock</div>
+    </ion-card>
+
+</ion-content>

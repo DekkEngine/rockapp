@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar color="tabs" >
+    <ion-title class="titulo" text-center >metal</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div text-center >
+    <img class="cover" [src]="metal.cover" alt="">
+    <img class="perfil" [src]="metal.img" alt="">
+    <div class="contenido" padding >
+      <p> <b>Nombre: </b>{{ metal.nombre }} </p>
+    </div>
+  </div>
+
+  <ion-grid class="albunes" text-center >
+    <ion-row>
+      <ion-col col-4 *ngIf="album.a1" >
+        <img (click)="irAlbum()" class="album" [src]="album.a1.img" alt="">
+        <p> {{ album.a1.nombre }} </p>
+      </ion-col>
+      <ion-col col-4 *ngIf="album.a2">
+        <img (click)="irAlbum2()" class="album" [src]="album.a2.img" alt="">
+        <p> {{ album.a2.nombre }} </p>
+      </ion-col>
+      <ion-col col-4 *ngIf="album.a3" >
+        <img (click)="irAlbum3()" class="album" [src]="album.a3.img" alt="">
+        <p> {{ album.a3.nombre }} </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

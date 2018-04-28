@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar color="tabs" >
+    <ion-buttons left>
+        <button menuToggle icon-only ion-button >
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title class="titulo" text-center >todos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding text-center >
+  <h1>Metal</h1>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-3 *ngFor="let m of metal let i of index"  >
+            <img (click)="irGrupo(i)" class="perfilimg" [src]="m.img" alt="">
+            <p class="text-nombre" > {{ m.nombre }} </p>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+    <hr>
+</ion-content>
